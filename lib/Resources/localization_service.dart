@@ -2,8 +2,8 @@ import 'dart:developer';
 import 'dart:ui';
 
 import 'package:get/get.dart';
-import 'package:holland_bazar/Resources/Lang/ar.dart';
-import 'package:holland_bazar/Resources/Lang/en.dart';
+import 'package:holland_bazar/Lang/ar.dart';
+import 'package:holland_bazar/Lang/en.dart';
 import 'package:holland_bazar/app_controller.dart';
 
 class LocalizationService extends Translations {

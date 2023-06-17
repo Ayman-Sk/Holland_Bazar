@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:holland_bazar/Resources/string_manger.dart';
 
 class OnBoardingController extends GetxController {
   PageController pageController = PageController();
@@ -7,6 +8,9 @@ class OnBoardingController extends GetxController {
 
   get index => _index.value;
   set index(value) => _index.value = value;
+
+  final List<String> titles = [AppStrings.findFoodyouLove, AppStrings.fastDelivery, AppStrings.liveTracking];
+  final List<String> subTitles = ['', '', ''];
 
   onChangePage() {
     index += 1;

@@ -10,16 +10,13 @@ import 'package:holland_bazar/Widgets/app_locale_image.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnBoardingScreen extends GetView<OnBoardingController> {
-  OnBoardingScreen({super.key});
+  const OnBoardingScreen({super.key});
 
   final List<Widget> pages = const [
     AppLocaleImage(path: ImageAssets.onBoarding1, isSvg: true),
     AppLocaleImage(path: ImageAssets.onBoarding2, isSvg: true),
     AppLocaleImage(path: ImageAssets.onBoarding3, isSvg: true),
   ];
-
-  final List<String> titles = [AppStrings.findFoodyouLove, AppStrings.fastDelivery, AppStrings.liveTracking];
-  final List<String> subTitles = ['', '', ''];
 
   @override
   Widget build(BuildContext context) {
@@ -49,10 +46,13 @@ class OnBoardingScreen extends GetView<OnBoardingController> {
               count: 3,
               effect: WormEffect(activeDotColor: Get.theme.primaryColor, radius: Get.width / 50, dotWidth: 2.1.w(), dotHeight: 2.1.w()),
             ),
-            SizedBox(height: 5.h()),
-            // Text(data),
-            // Text(data),
-            SizedBox(height: 5.h()),
+            SizedBox(height: 8.8.h()),
+            SizedBox(
+                width: 72.w(), child: Text(controller.titles[controller.index], style: AppTextStyle.xxLargeBold700, textAlign: TextAlign.center)),
+            SizedBox(height: 8.8.h()),
+            SizedBox(
+                width: 72.w(), child: Text(controller.subTitles[controller.index], style: AppTextStyle.regularBlack, textAlign: TextAlign.center)),
+            SizedBox(height: 10.5.h()),
             AppButton(
               onPressed: () => controller.onChangePage(),
               borderRadius: 12,

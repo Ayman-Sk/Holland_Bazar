@@ -18,7 +18,8 @@ class AppTextStyle {
   static const double large_font_size = 20.0;
   static const double mLarge_font_size = 22.0;
   static const double xLarge_font_size = 24.0;
-  static const double xxLarge_font_size = 30.0;
+  static const double xxLarge_font_size = 28.0;
+  static const double xxxLarge_font_size = 30.0;
 
   static get largeGreyBold => const TextStyle(color: Colors.white, fontWeight: FontWeight.w600, fontSize: large_font_size);
   static get largeGreyBold700 => const TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: large_font_size);
@@ -29,7 +30,7 @@ class AppTextStyle {
 
   static get xMediumGreyBold => const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: xMedium_font_size);
 
-  static TextStyle get regularBlack => const TextStyle(color: Colors.white, fontWeight: FontWeight.w400, fontSize: regular_font_size);
+  static get regularBlack => const TextStyle(color: Color(0xFF7C7D7E), fontWeight: FontWeight.w400, fontSize: regular_font_size);
 
   static get xSmallDarkGreyBold => const TextStyle(color: Colors.white, fontWeight: FontWeight.w500, fontSize: xSmall_font_size);
 
@@ -93,9 +94,11 @@ class AppTextStyle {
   static get regularWhitekBold => const TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: regular_font_size);
 
   static get mediumBlack => const TextStyle(color: Colors.black, fontSize: medium_font_size);
-  static xMediumSecondaryBold700(context) => TextStyle(color: Theme.of(context).secondaryHeaderColor, fontWeight: FontWeight.w600, fontSize: xMedium_font_size);
+  static xMediumSecondaryBold700(context) =>
+      TextStyle(color: Theme.of(context).secondaryHeaderColor, fontWeight: FontWeight.w600, fontSize: xMedium_font_size);
 
-  static largeSecondaryBold700(context) => TextStyle(color: Theme.of(context).secondaryHeaderColor, fontWeight: FontWeight.bold, fontSize: large_font_size);
+  static largeSecondaryBold700(context) =>
+      TextStyle(color: Theme.of(context).secondaryHeaderColor, fontWeight: FontWeight.bold, fontSize: large_font_size);
 
   static xMediumPrimaryBold700(context, {Color? color}) =>
       TextStyle(color: color ?? Theme.of(context).primaryColor, fontWeight: FontWeight.w600, fontSize: xMedium_font_size);
@@ -104,6 +107,7 @@ class AppTextStyle {
       TextStyle(color: color ?? Theme.of(context).primaryColor, fontWeight: FontWeight.w600, fontSize: medium_font_size);
 
   static regularPrimaryBold700(context) => TextStyle(color: Theme.of(context).primaryColor, fontWeight: FontWeight.w600, fontSize: regular_font_size);
+  static get xxLargeBold700 => const TextStyle(color: Color(0xFF4A4B4D), fontWeight: FontWeight.w700, fontSize: xxLarge_font_size);
 
   // static mediumGreyBold700(context) => TextStyle(color: AppColors.darkGrey, fontWeight: FontWeight.w600, fontSize: medium_font_size);
 
@@ -116,9 +120,11 @@ class AppTextStyle {
   static largePrimaryBold700(context, {Color? color}) =>
       TextStyle(color: color ?? Theme.of(context).primaryColor, fontWeight: FontWeight.w600, fontSize: large_font_size);
 
-  static regularSecondaryBold500(context) => TextStyle(color: Theme.of(context).secondaryHeaderColor, fontWeight: FontWeight.w500, fontSize: regular_font_size);
+  static regularSecondaryBold500(context) =>
+      TextStyle(color: Theme.of(context).secondaryHeaderColor, fontWeight: FontWeight.w500, fontSize: regular_font_size);
 
-  static smallSecondaryBold500(context) => TextStyle(color: Theme.of(context).secondaryHeaderColor, fontWeight: FontWeight.w500, fontSize: small_font_size);
+  static smallSecondaryBold500(context) =>
+      TextStyle(color: Theme.of(context).secondaryHeaderColor, fontWeight: FontWeight.w500, fontSize: small_font_size);
 
   static mediumBlackWithBold(context) => const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: medium_font_size);
 
@@ -126,7 +132,8 @@ class AppTextStyle {
 
   static largeLightGrey(context) => const TextStyle(color: Colors.grey, fontWeight: FontWeight.w600, fontSize: 16, letterSpacing: 1.1);
 
-  static regularSecondary(context) => TextStyle(color: Theme.of(context).secondaryHeaderColor, fontWeight: FontWeight.w500, fontSize: regular_font_size);
+  static regularSecondary(context) =>
+      TextStyle(color: Theme.of(context).secondaryHeaderColor, fontWeight: FontWeight.w500, fontSize: regular_font_size);
 
   static smallLightGreyWithLineThrough(context) =>
       const TextStyle(color: Colors.grey, fontWeight: FontWeight.w800, decoration: TextDecoration.lineThrough, fontSize: small_font_size);
